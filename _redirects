@@ -1,1 +1,44 @@
-/*  https://www.unionfibergel.com/:splat  301
+# 阿里企业官网 SEO 路径 -> unionfibergel.com 静态页面对应关系
+# 规则：显式路径优先，未匹配的最后走通配符兜底
+
+# 首页
+/sy              https://www.unionfibergel.com/                 301
+/newhome         https://www.unionfibergel.com/                 301
+/xydascl         https://www.unionfibergel.com/                 301
+
+# 关于我们 / 企业信息
+/gywm            https://www.unionfibergel.com/about.html       301
+/gywm_03150257_174  https://www.unionfibergel.com/about.html       301
+/fwal            https://www.unionfibergel.com/about.html       301
+/hnzx            https://www.unionfibergel.com/about.html       301
+
+# 产品中心
+/cplb            https://www.unionfibergel.com/products.html    301
+/tcl             https://www.unionfibergel.com/products.html    301
+/gtx             https://www.unionfibergel.com/products.html    301
+/gxh             https://www.unionfibergel.com/products.html    301
+/gjcl            https://www.unionfibergel.com/products.html    301
+
+# 技术
+/Technology      https://www.unionfibergel.com/technology.html  301
+/app2            https://www.unionfibergel.com/technology.html  301
+/app2_06091141_398  https://www.unionfibergel.com/technology.html  301
+
+# 应用
+/applications    https://www.unionfibergel.com/applications.html 301
+
+# 质量控制
+/QualityControl  https://www.unionfibergel.com/quality-control.html 301
+/QC              https://www.unionfibergel.com/quality-control.html 301
+
+# 文档下载
+/download        https://www.unionfibergel.com/documents.html   301
+
+# 联系我们
+/lxwm            https://www.unionfibergel.com/contact.html     301
+
+# 解决方案/业务
+/jjfayw          https://www.unionfibergel.com/applications.html 301
+
+# 兜底：未匹配的路径也回到首页，避免境外看到 404
+/*               https://www.unionfibergel.com/                 301
