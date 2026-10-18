@@ -7,8 +7,36 @@
     <title>Redirecting to Hubei Union-Fiber Technology Co., Ltd.</title>
     <link rel="canonical" href="https://www.unionfibergel.com/">
     <script type="text/javascript">
-        // 如果 301/meta refresh 都没生效，JS 兜底跳转到 .com 首页
-        window.location.replace('https://www.unionfibergel.com/');
+        // 根据阿里企业官网的 SEO 路径映射到 .com 的对应静态页面
+        (function () {
+            var pathMap = {
+                '/sy': '/',
+                '/newhome': '/',
+                '/xydascl': '/',
+                '/gywm': '/about.html',
+                '/gywm_03150257_174': '/about.html',
+                '/fwal': '/about.html',
+                '/hnzx': '/about.html',
+                '/cplb': '/products.html',
+                '/tcl': '/products.html',
+                '/gtx': '/products.html',
+                '/gxh': '/products.html',
+                '/gjcl': '/products.html',
+                '/Technology': '/technology.html',
+                '/app2': '/technology.html',
+                '/app2_06091141_398': '/technology.html',
+                '/applications': '/applications.html',
+                '/QualityControl': '/quality-control.html',
+                '/QC': '/quality-control.html',
+                '/download': '/documents.html',
+                '/lxwm': '/contact.html',
+                '/jjfayw': '/applications.html'
+            };
+
+            var path = window.location.pathname.replace(/\/$/, '');
+            var target = pathMap[path] || '/';
+            window.location.replace('https://www.unionfibergel.com' + target);
+        })();
     </script>
 </head>
 <body>
